@@ -19,6 +19,7 @@ def fetch_context_dria(query, contract_id):
     )
    
     r1 = response_1.json()
+    print(response_1)
     print("Response 1:", r1)
     c1 = [i["metadata"] for i in r1["data"]]
     contexts = " Sentence: ". join(c1[0:3]) 
