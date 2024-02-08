@@ -17,6 +17,7 @@ def fetch_context_dria(query, contract_id):
             "query": query
         }
     )
+    print(response_1.text)
    
     r1 = response_1.json()
     print(response_1)
